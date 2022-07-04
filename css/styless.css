@@ -186,7 +186,7 @@ font-family: var(--font-family-title);
     text-transform: uppercase;
 }
   
-.button {
+.button-open {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 32px;
@@ -202,9 +202,41 @@ font-family: var(--font-family-title);
     text-align: center;
     cursor: pointer;
     }
-.button:hover,
-.button:focus {
-background-color: #188ce8;
+.button-open:hover,
+.button-open:focus {
+    background-color: #188ce8;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    left: 536px;
+    top: 221px;
+    width: 528px;
+    height: 581px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.button-close {
+    width: 18px;
+    height: 18px;
 }
 
 /* section benefits*/
