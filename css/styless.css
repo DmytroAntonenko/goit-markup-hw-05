@@ -86,14 +86,12 @@ font-family: var(--font-family-title);
 
 .nav-item {
     padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .nav-item:not(:last-child) {
     margin-right: 50px;   
 }
 .nav-link {
-    display: block;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -104,6 +102,17 @@ font-family: var(--font-family-title);
 .nav-link:focus {
     color: var(--accent-color);
 }
+.current::after {
+    content: "";
+    display: block;
+    height: 4px;
+    margin-top: 28px;
+    background-image: url(../images/hover.png);
+    background-size: cover;
+    border-radius: 2px;
+    
+}
+
 .current {
     color: var(--accent-color);
 }
