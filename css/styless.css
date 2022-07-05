@@ -599,6 +599,46 @@ padding: 20px 24px;
 border: 1px solid #EEEEEE;
 }
 
+.projects-card {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.projects-item:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);;
+  
+    transform: translateY(101%);
+    transition: transform 250ms ease;
+  }
+  
+  .overlay > p {
+    color: var(--primery-white-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    padding: 63px 24px;
+    margin: 0;
+  }
+  
+  /* .overlay code {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #2a2a2a;
+  } */
+
 .company-name {
     margin-top: 0;
     margin-bottom: 0;
